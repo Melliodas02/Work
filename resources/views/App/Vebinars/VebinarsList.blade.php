@@ -11,7 +11,7 @@
         </div>
         @foreach ($data as $el)
             <div class="border border-1 rounded mt-2 p-3 row">
-                <h2 class="col-4">{{ $el->Topic }}</h2>
+                <p class="col-4">{{ $el->Topic }}</p>
                 <p class="col-4">{{ $el->Stage }}</p>
                 <div class="col-4 row">
                     @if( $el->Stage == "Подготовка доклада")

@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('vebinar__docs', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('ID_VEBINAR');
-            $table->text('Description');
+            $table->text('Description')->nullable(true);
             $table->string('FileSrc');
             $table->string('Status')->nullable(true);
             $table->timestamps();
